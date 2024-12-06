@@ -1,9 +1,10 @@
 name: Testing to print
-on:
+on: 
   workflow_dispatch:
-    inputs:
+   inputs:
        word:
        description: "Print word"
+       required: true
        type: string
 
 jobs:
