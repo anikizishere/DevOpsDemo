@@ -1,0 +1,17 @@
+name: Testing to print
+on:
+  workflow_dispatch:
+    inputs:
+       word:
+       description: "Print word"
+       type: string
+
+jobs:
+  print-word:
+  runs-on: ubuntu-latset
+
+  steps:
+    - name: Print word
+      run: eco "${{github.event.inputs.word}}"
+      
+ 
